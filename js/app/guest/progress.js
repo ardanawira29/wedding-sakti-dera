@@ -79,6 +79,7 @@ export const progress = (() => {
         info = document.getElementById('progress-info');
         bar = document.getElementById('progress-bar');
         info.classList.remove('d-none');
+        bar.style.backgroundColor = '#7B3F00';
         cancelProgress = new Promise((res) => document.addEventListener('undangan.progress.invalid', res));
     };
 
